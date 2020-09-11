@@ -1,10 +1,6 @@
 /// <reference types='node'>
 import {RequestOptions, IncomingMessage} from 'http';
 import {URL} from 'url';
-interface CentraInit {
-  (url: URL | string, method?: string): Centra.Request;
-}
-declare const Centra: CentraInit;
 declare namespace Centra {
   interface Response {
     coreRes: IncomingMessage;
@@ -38,4 +34,4 @@ declare namespace Centra {
   }
 }
 
-export = Centra;
+export function centra(url: URL | string, method?: string): Centra.Request;
