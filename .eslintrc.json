@@ -3,18 +3,23 @@
     "es6": true,
     "node": true
   },
-  "extends": ["google", "plugin:prettier/recommended", "eslint:recommended"],
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "prettier/@typescript-eslint",
+    "google",
+    "plugin:prettier/recommended",
+    "eslint:recommended"
+  ],
   "globals": {
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
   },
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "ecmaVersion": 11,
+    "ecmaVersion": 2021,
     "sourceType": "module"
   },
   "rules": {
-    "prettier/prettier": "error",
-    "require-jsdoc": "off",
-    "no-prototype-builtins": "off"
+    "prettier/prettier": "error"
   }
 }
