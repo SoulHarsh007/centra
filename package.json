@@ -1,6 +1,6 @@
 {
   "name": "@nia3208/centra",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Fork of @aero/centra to support only what nia needs.",
   "main": "createRequest.js",
   "module": "createRequest.mjs",
