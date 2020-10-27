@@ -35,3 +35,7 @@ declare namespace Centra {
 }
 
 export function centra(url: URL | string, method?: string): Centra.Request;
+export default function centra(
+  url: URL | string,
+  method?: string
+): Centra.Request;
